@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
+  margin-bottom: -10px;
+  width: 100vw;
+  
+  
+}
+.desktopMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0;
+  
+}
+.home {
+  margin-left: 50px;
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+}
+.about {
+  margin-left: 50px;
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+}
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  padding: 10px 0;
+  width: 200px;
+  
+}
+.dropdown {
+  margin-left: 50px;
+  position: relative;
+  display: inline-block;
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+}
+.contact {
+  margin-left: 50px;
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+}
+.Destination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;;
+}
+/* Adjust chevron position */
+.Destination svg { /* Targets the FaChevronDown icon */
+  position: relative;
+  top: 2px; /* Moves icon down 2px */
+  margin-left: 4px; /* Optional: Adds spacing from text */
+  transition: transform 0.3s ease; /* For rotation animation */
+}
+
+/* Rotate icon when dropdown is open */
+.Destination.open svg {
+  transform: rotate(180deg);
+}
+.FaChevronDown {
+  transition: transform 0.3s;
+  margin-top: 5px;
+}
+.dropdown:hover .FaChevronDown {
+  transform: rotate(180deg);
+}
+.trips {
+  color: orange;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+.vTrips, .uTrips {
+  list-style: none;
+}
+.visitedTrips, .upcomingTrips {
+  transition: background 0.3s;
+  padding: 5px 15px;
+  color: orange;
+  text-decoration: none;
+}
+.visitedTrips:hover ,.upcomingTrips:hover{
+  background: #f8f8f8;
+}
+
+
+
+
+
+
+
+.mobileMenuButton {
+  display: none;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+  .mobileMenuButton {
+    display: block;
+  }
+  .mobile {
+    display: block;
+  }
+
+}
