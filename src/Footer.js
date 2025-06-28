@@ -5,16 +5,16 @@ import styles from './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer >
       <div className="footer-container">
         {/* Column 1: Social Media */}
         <div className="footer-column">
           <h3 className="footer-heading">Connect With Us</h3>
           <div className="social-icons">
-            <a href="#" rel='noreferrer' aria-label="Facebook"><FaFacebook className="icon" /></a>
+            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' aria-label="Facebook"><FaFacebook className="icon" /></a>
             <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' target='_blank' aria-label="Instagram"><FaInstagram className="icon" /></a>
-            <a href="#" rel='noreferrer' aria-label="Twitter"><FaTwitter className="icon" /></a>
-            <a href="#" rel='noreferrer' target="_blank" aria-label="WhatsApp"><FaWhatsapp className="icon" /></a>
+            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' aria-label="Twitter"><FaTwitter className="icon" /></a>
+            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' target="_blank" aria-label="WhatsApp"><FaWhatsapp className="icon" /></a>
           </div>
           <p className="footer-text">Book your next trip with us!</p>
         </div>
