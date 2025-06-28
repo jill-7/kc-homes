@@ -1,11 +1,12 @@
 import React from 'react';
+import './Footer.css';
 import { FaFacebook, FaInstagram, FaTwitter, FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
-import styles from './Footer.css';
+
 
 
 const Footer = () => {
   return (
-    <footer >
+    <footer className='footer'>
       <div className="footer-container">
         {/* Column 1: Social Media */}
         <div className="footer-column">
