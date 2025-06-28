@@ -70,7 +70,7 @@ const Home = () => {
         Whether you're a solo adventure enthusiast or with a group they deliver exceptional experience. Definitely deserves Five stars!"
       </p>
       <div className="review-footer">
-      <a className='kc-reviews' href='https://www.google.com/maps/place/KC+Homes+Tours+and+Travel/@-4.0039536,39.702648,17z/data=!4m10!3m9!1s0x18400d467a604e57:0x4375cc6a181faec7!5m3!1s2025-07-20!4m1!1i2!8m2!3d-4.003959!4d39.7052229!16s%2Fg%2F11xkpq72dd?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D' target='_blank'>
+      <a className='kc-reviews' href='https://www.google.com/maps/place/KC+Homes+Tours+and+Travel/@-4.0039536,39.702648,17z/data=!4m10!3m9!1s0x18400d467a604e57:0x4375cc6a181faec7!5m3!1s2025-07-20!4m1!1i2!8m2!3d-4.003959!4d39.7052229!16s%2Fg%2F11xkpq72dd?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D' target='_blank'rel='noreferrer'>
         <img src="/Google.png" alt="Google" className="google-icon" />
         <div className='kc-review'>Google Review</div>
         </a>
@@ -118,7 +118,7 @@ const Home = () => {
         "Best services in terms of communication, rooms and adventures.KC hones doesn’t play when it comes to quality and fun. it’s a whole package deal"
       </p>
       <div className="review-footer">
-        <a className='kc-reviews' href='https://www.google.com/maps/place/KC+Homes+Tours+and+Travel/@-4.0039536,39.702648,17z/data=!4m10!3m9!1s0x18400d467a604e57:0x4375cc6a181faec7!5m3!1s2025-07-20!4m1!1i2!8m2!3d-4.003959!4d39.7052229!16s%2Fg%2F11xkpq72dd?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D' target='_blank'>
+        <a className='kc-reviews' href='https://www.google.com/maps/place/KC+Homes+Tours+and+Travel/@-4.0039536,39.702648,17z/data=!4m10!3m9!1s0x18400d467a604e57:0x4375cc6a181faec7!5m3!1s2025-07-20!4m1!1i2!8m2!3d-4.003959!4d39.7052229!16s%2Fg%2F11xkpq72dd?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D' target='_blank'rel='noreferrer'>
         <img src="/Google.png" alt="Google" className="google-icon" />
         <div className='kc-review'>Google Review</div>
         </a>

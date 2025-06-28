@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-heading">Connect With Us</h3>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook"><FaFacebook className="icon" /></a>
-            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" target='_blank' aria-label="Instagram"><FaInstagram className="icon" /></a>
-            <a href="#" aria-label="Twitter"><FaTwitter className="icon" /></a>
-            <a href="#" target="_blank" aria-label="WhatsApp"><FaWhatsapp className="icon" /></a>
+            <a href="#" rel='noreferrer' aria-label="Facebook"><FaFacebook className="icon" /></a>
+            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' target='_blank' aria-label="Instagram"><FaInstagram className="icon" /></a>
+            <a href="#" rel='noreferrer' aria-label="Twitter"><FaTwitter className="icon" /></a>
+            <a href="#" rel='noreferrer' target="_blank" aria-label="WhatsApp"><FaWhatsapp className="icon" /></a>
           </div>
           <p className="footer-text">Book your next trip with us!</p>
         </div>
@@ -23,8 +23,8 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-heading">Quick Links</h3>
           <ul className="footer-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+            <li><a href="/" >Home</a></li>
+            <li><a href="/about" >About</a></li>
             <li><a href="/visited-trips">Visited Trips</a></li>
             <li><a href="/upcoming-trips">Upcoming Trips</a></li>
             <li><a href="/contact">Contacts</a></li>
