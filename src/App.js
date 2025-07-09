@@ -3,7 +3,7 @@ import Home from './Home';
 import About from './About';
 import VisitedTrips from './VisitedTrips';
 import UpcomingTrips from './UpcomingTrips';
-import Contact from './Contact';
+import Registration from './Registration';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Footer';
 
@@ -18,7 +18,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/visited-trips" element={<VisitedTrips />} />
       <Route path="/upcoming-trips" element={<UpcomingTrips />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/registration" element={<Registration />} />
     </Routes>
     <Footer />
    </Router>

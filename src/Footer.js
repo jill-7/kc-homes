@@ -12,10 +12,10 @@ const Footer = () => {
         <div className="footer-column">
           <h3 className="footer-heading">Connect With Us</h3>
           <div className="social-icons">
-            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' aria-label="Facebook"><FaFacebook className="icon" /></a>
+            <a href="https://www.facebook.com/share/1FDhMh2LtP/" rel='noreferrer' aria-label="Facebook"><FaFacebook className="icon" /></a>
             <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' target='_blank' aria-label="Instagram"><FaInstagram className="icon" /></a>
-            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' aria-label="Twitter"><FaTwitter className="icon" /></a>
-            <a href="https://www.instagram.com/kchomes_tours_and_travel?igsh=MXJpcGtnM2s5ejNzNQ==" rel='noreferrer' target="_blank" aria-label="WhatsApp"><FaWhatsapp className="icon" /></a>
+            <a href="https://x.com/KcHomesTours?t=BVpLITcxJd0ykpYwDQATEQ&s=09" rel='noreferrer' aria-label="Twitter"><FaTwitter className="icon" /></a>
+            <a href="https://chat.whatsapp.com/F8d3eQoHBOzHXZfVXOErPY?mode=r_t" rel='noreferrer' target="_blank" aria-label="WhatsApp"><FaWhatsapp className="icon" /></a>
           </div>
           <p className="footer-text">Book your next trip with us!</p>
         </div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <li><a href="/about" >About</a></li>
             <li><a href="/visited-trips">Visited Trips</a></li>
             <li><a href="/upcoming-trips">Upcoming Trips</a></li>
-            <li><a href="/contact">Contacts</a></li>
+            <li><a href="/registration">Registration</a></li>
           </ul>
         </div>
 
