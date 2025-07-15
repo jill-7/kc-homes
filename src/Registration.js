@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useSearchParams} from 'react-router-dom';
 import { init, send } from '@emailjs/browser';
 import { upcomingTrips } from './UpcomingTrips';
-import { FaFacebook, FaInstagram, FaTwitter, FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 import './Registration.css';
 
 init("jRhxRv6bKTanar6HC");
