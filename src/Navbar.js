@@ -53,7 +53,7 @@ function Navbar() {
           </div>
         
         
-          <Link to="/contact" className="contact" target='_blank' rel='noreferrer'>Contact</Link>
+          <Link to="/registration" className="contact" target='_blank' rel='noreferrer'>Registration</Link>
         
       </ul>
 
@@ -87,7 +87,7 @@ function Navbar() {
             )}
           </li>
           <li>
-            <Link to="/contact" target='_blank' rel='noreferrer' onClick={toggleMobileMenu}>Contact</Link>
+            <Link to="/registration" target='_blank' rel='noreferrer' onClick={toggleMobileMenu}>Registration</Link>
           </li>
         </ul>
       )}

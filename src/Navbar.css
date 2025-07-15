@@ -119,15 +119,104 @@
 .mobile {
   display: none;
 }
+
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  
+  .home, .about, .contact, .dropdown {
+    margin-left: 30px;
+  }
+}
+
+/* Mobile and Tablet Breakpoint */
 @media (max-width: 768px) {
-  .desktopMenu {
+  .navbar {
+    padding: 0 15px;
+    height: 60px;
+  }
+  
+  .logo-image {
+    width: 40px;
+    height: 40px;
+  }
+ .desktopMenu {
     display: none;
   }
-  .mobileMenuButton {
-    display: block;
-  }
+  
   .mobile {
     display: block;
   }
+  
+  .mobileMenuButton {
+    display: block;
+  }
+  
+  .mobileMenu {
+    min-width: 280px;
+    right: -15px;
+  }
+}
 
+/* Small Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+    height: 55px;
+  }
+.logo-image {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .mobileMenuButton {
+    font-size: 18px;
+    padding: 6px;
+  }
+  
+  .mobileMenu {
+    min-width: calc(100vw - 40px);
+    right: -10px;
+    border-radius: 8px;
+  }
+  
+  .mobileMenu a {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+ .mobileMenu button {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  
+  .mobileDropdownMenu a {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 320px) {
+  .navbar {
+    padding: 0 8px;
+    height: 50px;
+  }
+  
+  .logo-image {
+    width: 32px;
+    height: 32px;
+  }
+.mobileMenuButton {
+    font-size: 16px;
+    padding: 5px;
+  }
+  .mobileMenu {
+    min-width: calc(100vw-25px);
+    right: -8px;
+  }
+  
+  
 }

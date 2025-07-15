@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
           <div className="contact-info">
             <p><FaMapMarkerAlt className="contact-icon" />Bamburi, Mombasa</p>
-            <p><FaPhone className="contact-icon" /> 0792739267</p>
-            <p><FaEnvelope className="contact-icon" /> rejilloh@gmail.com</p>
+            <p><FaPhone className="contact-icon" /> 0700540507</p>
+            <p><FaEnvelope className="contact-icon" /> kchomes06@gmail.com</p>
           </div>
         </div>
       </div>
