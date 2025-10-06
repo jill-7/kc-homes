@@ -1,0 +1,182 @@
+.registration-contact-container {
+ width: 500px;
+ margin-top: 90px;
+ margin-left: 380px;
+ border: 1px solid #2d3748;
+ border-radius: 6px;
+ padding: 40px;
+ background-color: #2d3748;
+ color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+  
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.trip-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.register-btn {
+  display: inline-block;
+  background: #4299e1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background: #4299e1;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 160px;
+  font-size: 15px;
+}
+.text-area {
+  width: 50%;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+  color: #2d3748;
+  background: #f0fff4;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 17px;
+}
+.success-message a {
+  color: #4299e1;
+  font-weight: bold;
+}
+
+.trip-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.contact-info {
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .registration-contact-container {
+    margin: 60px auto 20px auto;
+    padding: 30px;
+    width: 95%;
+  }
+  .trips-grid {
+    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    margin-top: 60px;
+  }
+  .contact-info h3 {
+    font-size: 16px;
+  }
+  .social-icons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-contact-container {
+    margin: 40px auto 20px auto;
+    padding: 20px;
+    width: calc(100%-40px);
+    border-radius: 8px;
+  }
+  .registration-contact-container h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form-group input, .form-group textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+  .submit-btn {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
+  .trips-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  .trip-card {
+    padding: 12px;
+  }
+  .success-message {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .contact-info h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .social-icons {
+    gap: 12px;
+  }
+  .social-icons a{
+    font-size: 20px;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .registration-contact-container {
+    padding: 10px;
+    margin: 20px auto;
+    width: calc(100% -40px);
+  }
+  .form-group input,.form-group textarea {
+    padding: 10px;
+  }
+  .submit-btn {
+    padding: 12px 16px;
+  }
+}

@@ -1,0 +1,344 @@
+/* BNBs.css - Professional BNB Styling */
+
+.bnbs-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bnbs-page h1 {
+  text-align: center;
+  color: #2d3748;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.bnbs-page > p {
+  text-align: center;
+  color: #718096;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+/* Filters Section */
+.bnbs-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.search-input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4299e1;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+/* BNB Grid */
+.bnbs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* BNB Card */
+.bnb-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.bnb-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.bnb-image-container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+/* In-card image scrolling */
+.bnb-image-scroll-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.bnb-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.bnb-card:hover .bnb-image {
+  transform: scale(1.05);
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.bnb-image-container:hover .scroll-arrow {
+  opacity: 1;
+}
+
+.scroll-arrow:hover {
+  background: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.photo-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* Status Badges */
+.available-soon-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #d69e2e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.available-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #38a169;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.booked-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e53e3e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Card Content */
+.bnb-content {
+  padding: 1.5rem;
+}
+
+.bnb-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.bnb-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bnb-meta p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.bnb-meta .price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.bnb-description {
+  color: #718096;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Action Buttons */
+.bnb-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.book-button {
+  flex: 1;
+  background: #4299e1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-button:hover {
+  background: #3182ce;
+}
+
+.book-button:disabled {
+  background: #a0aec0;
+  cursor: not-allowed;
+}
+
+.whatsapp-btn {
+  flex: 1;
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #128c7e;
+}
+
+/* Loading State */
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #718096;
+  padding: 3rem;
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 3rem;
+  color: #718096;
+}
+
+.no-results h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bnbs-page {
+    padding: 1rem;
+  }
+  
+  .bnbs-page h1 {
+    font-size: 2rem;
+  }
+  
+  .bnbs-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .bnbs-filters {
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  .bnb-actions {
+    flex-direction: column;
+  }
+  
+  .scroll-arrow {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .bnb-content {
+    padding: 1rem;
+  }
+  
+  .bnb-image-container {
+    height: 200px;
+  }
+}
+
