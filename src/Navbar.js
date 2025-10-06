@@ -82,21 +82,21 @@ function Navbar() {
 
         {/* Menu Items */}
         <div className="mobile-menu-items">
-          <Link to="/" onClick={closeAllMenus} className='mobile-link'>🏠 Home</Link>
-          <Link to="/about" onClick={closeAllMenus} className='mobile-link'>ℹ About</Link>
+          <Link to="/" onClick={closeAllMenus} className='mobile-link'>Home</Link>
+          <Link to="/about" onClick={closeAllMenus} className='mobile-link'>About</Link>
           
           <div className="mobile-dropdown">
             <button onClick={toggleDestinations} className='mobile-dropdown-toggle'>
-              🌍 Destinations <FaChevronDown className={isDestinationsOpen ? 'rotate' : ''} />
+               Destinations <FaChevronDown className={isDestinationsOpen ? 'rotate' : ''} />
             </button>
             <div className={`mobile-dropdown-menu ${isDestinationsOpen ? 'active' : ''}`}>
-              <Link to="/visited-trips" onClick={closeAllMenus} className='mobile-dropdown-link'>📸 Visited Trips</Link>
-              <Link to="/upcoming-trips" onClick={closeAllMenus} className='mobile-dropdown-link'>🗓 Upcoming Trips</Link>
+              <Link to="/visited-trips" onClick={closeAllMenus} className='mobile-dropdown-link'>Visited Trips</Link>
+              <Link to="/upcoming-trips" onClick={closeAllMenus} className='mobile-dropdown-link'>Upcoming Trips</Link>
             </div>
           </div>
           
-          <Link to="/registration" onClick={closeAllMenus} className='mobile-link'>📝 Registration</Link>
-          <Link to="/bnbs" onClick={closeAllMenus} className='mobile-link'>🏡 BNBs</Link>
+          <Link to="/registration" onClick={closeAllMenus} className='mobile-link'>Registration</Link>
+          <Link to="/bnbs" onClick={closeAllMenus} className='mobile-link'>BNBs</Link>
         </div>
       </div>
     </>
