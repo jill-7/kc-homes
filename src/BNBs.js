@@ -16,7 +16,7 @@ const BNBs = () => {
           'https://api.airtable.com/v0/appNe6nBPsk1ZXTlL/Table%201',
           {
             headers: {
-              'Authorization': 'Bearer patoPhPkiP3X1KIjn.deb69582a17af5e602e396a1c77d8ebf6ab18596d6df28896f2a2266facc455f'
+              'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_TOKEN}`
             }
           }
         );
