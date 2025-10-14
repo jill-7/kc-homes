@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './UpcomingTrips.css';
 import { upcomingTrips } from './tripData'; // Import from shared file
 
 export default function UpcomingTrips() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   // Group trips by month - using the imported upcomingTrips
   const groupedTrips = upcomingTrips.reduce((acc, trip) => {
     const month = trip.date.split(' ')[0]; // Get month from date
@@ -12,8 +14,31 @@ export default function UpcomingTrips() {
     return acc;
   }, {});
 
+  const openPopup = (imageSrc, altText) => {
+    setSelectedImage({ src: imageSrc, alt: altText });
+  };
+
+  const closePopup = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="upcoming-trips-page">
+      {/* Image Popup */}
+      {selectedImage && (
+        <div className="image-popup-overlay" onClick={closePopup}>
+          <div className="image-popup-content" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close-btn" onClick={closePopup}>×</button>
+            <img 
+              src={selectedImage.src} 
+              alt={selectedImage.alt}
+              className="popup-image"
+            />
+            <p className="popup-caption">{selectedImage.alt}</p>
+          </div>
+        </div>
+      )}
+
       <div className="trips-header">
         <h1>Upcoming Adventures</h1>
         <p>Join us on these incredible journeys</p>
@@ -32,7 +57,12 @@ export default function UpcomingTrips() {
               {trips.map((trip, index) => (
                 <div key={trip.id} className="timeline-trip-card">
                   <div className="trip-image">
-                    <img src={trip.image} alt={trip.name} />
+                    <img 
+                      src={trip.image} 
+                      alt={trip.name} 
+                      onClick={() => openPopup(trip.image, trip.name)}
+                      style={{ cursor: 'pointer' }}
+                    />
                   </div>
                   
                   <div className="trip-content">
@@ -44,7 +74,7 @@ export default function UpcomingTrips() {
                     </div>
                     <p className="trip-description">{trip.description}</p>
                     <div className="trip-footer">
-                      <span className="trip-price">KES {trip.price}</span>
+                      <span className="trip-price"> {trip.price}</span>
                       <Link 
                         to={`/registration?trip=${trip.id}&name=${trip.name}&price=${trip.price}`}
                         className="register-btn"

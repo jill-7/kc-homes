@@ -7,6 +7,7 @@ const BNBs = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [priceFilter, setPriceFilter] = useState('All Prices');
   const [currentPhotoIndices, setCurrentPhotoIndices] = useState({});
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Fetch BNBs from Airtable
   useEffect(() => {
@@ -70,6 +71,15 @@ const BNBs = () => {
         [bnbIndex]: (prev[bnbIndex] || 0) > 0 ? (prev[bnbIndex] || 0) - 1 : bnb.Photos.length - 1
       }));
     }
+  };
+
+  // Popup functions
+  const openImagePopup = (imageUrl, houseName) => {
+    setSelectedImage({ src: imageUrl, alt: houseName });
+  };
+
+  const closeImagePopup = () => {
+    setSelectedImage(null);
   };
 
   // Smart availability check with dates
@@ -137,6 +147,21 @@ const BNBs = () => {
 
   return (
     <div className="bnbs-page">
+      {/* Image Popup */}
+      {selectedImage && (
+        <div className="image-popup-overlay" onClick={closeImagePopup}>
+          <div className="image-popup-content" onClick={(e) => e.stopPropagation()}>
+            <button className="popup-close-btn" onClick={closeImagePopup}>×</button>
+            <img 
+              src={selectedImage.src} 
+              alt={selectedImage.alt}
+              className="popup-image"
+            />
+            <p className="popup-caption">{selectedImage.alt}</p>
+          </div>
+        </div>
+      )}
+
       <h1>Luxury Vacation Homes</h1>
       <p>Discover your perfect getaway in Mombasa</p>
       
@@ -179,7 +204,11 @@ const BNBs = () => {
                 <div className="bnb-image-container">
                   {bnb.Photos && bnb.Photos.length > 0 ? (
                     <React.Fragment>
-                      <div className="bnb-image-scroll-container">
+                      <div 
+                        className="bnb-image-scroll-container"
+                        onClick={() => openImagePopup(bnb.Photos[currentPhotoIndex].url, bnb['House Name'])}
+                        style={{ cursor: 'pointer' }}
+                      >
                         <img 
                           src={bnb.Photos[currentPhotoIndex].url} 
                           alt={bnb['House Name']}
@@ -213,7 +242,11 @@ const BNBs = () => {
                       {getStatusBadge(bnb)}
                     </React.Fragment>
                   ) : (
-                    <div className="bnb-image" style={{background: '#e2e8f0'}} />
+                    <div 
+                      className="bnb-image" 
+                      style={{background: '#e2e8f0', cursor: 'pointer' }}
+                      onClick={() => openImagePopup('', bnb['House Name'])}
+                    />
                   )}
                 </div>
                 
@@ -223,7 +256,7 @@ const BNBs = () => {
                   <div className="bnb-meta">
                     <p className="location">📍 {bnb.Location}</p>
                     <p className="price">💰 KES {bnb.Price}/night</p>
-                    <p className="guests">👥 Sleeps {bnb['Max Guests']}</p>
+                    <p className="guests">👥 Hosts {bnb['Max Guests']}</p>
                   </div>
                   
                   <p className="bnb-description">
