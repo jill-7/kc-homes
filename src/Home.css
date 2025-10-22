@@ -1,4 +1,6 @@
 /* Base Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
 .home-container {
   position: relative;
   min-height: 100vh;
@@ -37,7 +39,8 @@
 .image-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 1;
 }
 
 /* Text Content Styles */
@@ -51,29 +54,33 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  z-index: 10;
+  z-index: 2;
 }
 
 .main-heading {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin-bottom: 1.5rem;
-  color: orangered; /* gray-800 */
+  color: white; /* gray-800 */
   animation: bounce-in 1.2s ease-out;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-family: 'Montserrat', sans-serif;
  text-align: center;
 }
 .next-heading {
-  color: orangered;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  color: #E4B169;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .subtext {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  opacity: 0.9;
-  color: orangered; /* gray-600 */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  opacity: 0.95;
+  color: #fdf6f0; /* gray-600 */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
   animation: fade-up 1s ease-out 0.3s both;
 }
 

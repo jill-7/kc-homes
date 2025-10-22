@@ -3,43 +3,43 @@ import './VisitedTrips.css';
 
 const visitedTrips = [
   {
-    id: 'watamu-2024',
+    id: 'watamu-2025',
     name: "Watamu Getaway",
-    date: "March 15-18, 2025",
+    date: "February 15, 2025",
     description: "Watched the most incredible sunset while sipping fresh coconut water on the pristine beaches of Watamu. The turquoise waters and warm hospitality made this trip unforgettable.",
-    image: "/KC-beach.jpg",
+    image: "/KC-arafats.jpg",
     travelers: 24,
-    highlights: ["Beach Relaxation", "Snorkeling", "Sunset Views"],
+    highlights: ["Mambrui sand dunes", "Quad bike riding", "Sunset watching at Lichtaus"],
     location: "Watamu, Kenya"
   },
   {
-    id: 'wasini-2024',
+    id: 'wasini-2025',
     name: "Wasini Island Adventure", 
-    date: "February 10-12, 2025",
+    date: "April 19, 2025",
     description: "Swam with dolphins in the crystal clear waters of Wasini Island. The marine life was breathtaking, and the local Swahili cuisine was an absolute delight.",
-    image: "/KC-wasini.jpg",
+    image: "/3people.jpg",
     travelers: 18,
-    highlights: ["Dolphin Watching", "Marine Park", "Swahili Culture"],
+    highlights: ["Dolphin Watching", "Marine Park", "Snorkelling"],
     location: "Wasini Island, Kenya"
   },
   {
-    id: 'tsavo-2024',
+    id: 'tsavo-2025',
     name: "Tsavo Safari",
-    date: "January 5-7, 2025",
+    date: "August 16, 2025",
     description: "Witnessed the majestic red elephants in their natural habitat. The vast landscapes and diverse wildlife of Tsavo National Park left us in awe of Kenya's natural beauty.",
-    image: "/KC-rides.jpg", 
+    image: "/Vtrips3.jpg", 
     travelers: 32,
-    highlights: ["Wildlife Safari", "Photography", "Nature Walks"],
+    highlights: ["Wildlife Safari", "Photography", "Game drive"],
     location: "Tsavo National Park, Kenya"
   },
   {
-    id: 'malindi-2023',
-    name: "Malindi Cultural Tour",
-    date: "December 20-22, 2025", 
+    id: 'malindi-2025',
+    name: "Malindi: Sardegna Island & Mambrui",
+    date: "October 18, 2025", 
     description: "Explored the rich Swahili culture and history of Malindi. From the ancient Gedi Ruins to the vibrant local markets, every moment was a learning experience.",
-    image: "/KC-arafats.jpg",
+    image: "/Vtrips1.jpg",
     travelers: 15,
-    highlights: ["Cultural Tour", "Historical Sites", "Local Markets"],
+    highlights: ["Snorkelling", "Malindi marine park", "Glass bottom ride experience"],
     location: "Malindi, Kenya"
   }
 ];

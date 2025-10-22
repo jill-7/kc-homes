@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const backgroundImages = [
-    '/KC-beach.jpg',
-    '/KC-morepeople.jpg',
-    '/KC-wasini.jpg',
-    '/KC-arafats.jpg',
+    '/Vankc.jpg',
+    '/smile.jpg',
+    '/zebras.jpg',
+    '/Vtrips2.jpg',
     '/KC-marafa.jpg'
   ];
 

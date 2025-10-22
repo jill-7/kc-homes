@@ -108,7 +108,7 @@ const BNBs = () => {
     if (status === 'available' || status === 'available_soon') {
       const whatsappMessage = 'Hi! I want to check availability for ' + bnb['House Name'] + '. What dates are available?';
       const encodedMessage = encodeURIComponent(whatsappMessage);
-      window.open('https://wa.me/254712345678?text=' + encodedMessage);
+      window.open('https://wa.me/254117969036?text=' + encodedMessage);
     } else {
       alert(message);
     }
@@ -197,7 +197,7 @@ const BNBs = () => {
             const currentPhotoIndex = currentPhotoIndices[index] || 0;
             const whatsappMessage = 'Hi! I am interested in ' + bnb['House Name'];
             const encodedMessage = encodeURIComponent(whatsappMessage);
-            const whatsappUrl = 'https://wa.me/254712345678?text=' + encodedMessage;
+            const whatsappUrl = 'https://wa.me/254117969036?text=' + encodedMessage;
             
             return (
               <div key={index} className="bnb-card">

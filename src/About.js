@@ -29,9 +29,9 @@ const About = () => {
       {/* Floating Stats */}
       <div className="stats-container">
         {[
-          { number: '2', label: 'Epic Trips' },
-          { number: '50+', label: 'Happy Clients' },
-          { number: '6', label: 'Destinations' }
+          { number: '10', label: 'Epic Trips' },
+          { number: '100+', label: 'Happy Clients' },
+          { number: '8', label: 'Destinations' }
         ].map((stat, index) => (
           <div key={index} className="stat-card floating">
             <span className="stat-number">{stat.number}</span>
@@ -106,7 +106,8 @@ const About = () => {
 </section>
 
       {/* CTA */}
-      <div className="cta-banner fade-up">
+      <div className="cta-banner fade-up">, 
+  
         <h2>Ready for Your Adventure?</h2>
         <button className="pulse-button"><a href='/upcoming-trips' className='button'>Book Now</a></button>
       </div>
