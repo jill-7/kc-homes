@@ -10,31 +10,36 @@ const BNBs = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   // Fetch BNBs from Airtable
-  useEffect(() => {
-    const fetchBnbs = async () => {
-      try {
-        const response = await fetch(
-          'https://api.airtable.com/v0/appNe6nBPsk1ZXTlL/Table%201',
-          {
-            headers: {
-              'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_TOKEN}`
-            }
+ // Fetch BNBs from Airtable
+useEffect(() => {
+  const fetchBnbs = async () => {
+    try {
+      const response = await fetch(
+        'https://api.airtable.com/v0/appNe6nBPsk1ZXTlL/Table%201',
+        {
+          headers: {
+            'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_TOKEN}`
           }
-        );
-        const data = await response.json();
-        
-        if (data.records) {
-          setBnbs(data.records.map(record => record.fields));
         }
-      } catch (error) {
-        console.log('Error fetching BNBs:', error);
-      } finally {
-        setLoading(false);
+      );
+      const data = await response.json();
+      
+      if (data.records) {
+        const bnbsData = data.records.map(record => ({
+          ...record.fields,
+          descriptionExpanded: false
+        }));
+        setBnbs(bnbsData);
       }
-    };
+    } catch (error) {
+      console.log('Error fetching BNBs:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    fetchBnbs();
-  }, []);
+  fetchBnbs();
+}, []);
 
   // Filter BNBs based on search and price
   const filteredBnbs = bnbs.filter(bnb => {
@@ -259,9 +264,25 @@ const BNBs = () => {
                     <p className="guests">👥 Hosts {bnb['Max Guests']}</p>
                   </div>
                   
-                  <p className="bnb-description">
-                    {bnb.Description}
-                  </p>
+                  <div 
+  className={`bnb-description ${bnb.descriptionExpanded ? 'expanded' : ''}`}
+  onClick={() => {
+    const updatedBnbs = [...bnbs];
+    if (updatedBnbs[bnbs.findIndex(b => b['House Name'] === bnb['House Name'])]) {
+      updatedBnbs[bnbs.findIndex(b => b['House Name'] === bnb['House Name'])].descriptionExpanded = 
+        !bnb.descriptionExpanded;
+      setBnbs(updatedBnbs);
+    }
+  }}
+>
+  {bnb.Description}
+  {bnb.Description && bnb.Description.length > 100 && (
+    <span className="read-more-indicator">
+      {bnb.descriptionExpanded ? 'Read less' : 'Read more'}
+    </span>
+  )}
+</div>
+                  
                   
                   <div className="bnb-actions">
                     <button 
