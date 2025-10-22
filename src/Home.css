@@ -45,16 +45,17 @@
 
 /* Text Content Styles */
 .content-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  max-width: 56rem;
-  width: 90%;
-  padding: 0 1rem;
-  z-index: 3;
-  margin: 0;
+  position: relative;
+  margin-top: -360px;
+ padding-top: 2rem;
+ text-align: center;
+ max-width: 56rem;
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 1rem;
+ padding-right: 1rem;
+  z-index: 2;
+  
 }
 
 .main-heading {
@@ -249,8 +250,8 @@
 /* iPad/Tablet Styles (768px - 1024px) */
 @media (max-width: 1024px) {
   .slideshow-container {
-    height: 65vh;
-    margin-top: 70px;
+    height: 70vh;
+    margin-top: 80px;
   }
   
   .content-container {
@@ -302,27 +303,16 @@
    /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 65vh;
+    height: 60vh;
     margin-top: 70px;
-  }
-
-  .slideshow-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
   }
   
   .content-container {
-    position: absolute;
-    top: 45%; /* Adjusted from 50% to position it higher */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0 1rem;
-    text-align: center;
-    z-index: 2;
-    width: 90%;
+    margin-top: -240px;
+    padding-top: 1rem;
+    max-width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .main-heading {
