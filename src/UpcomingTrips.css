@@ -204,6 +204,7 @@
   .month-title {
     font-size: 1.25rem;
   }
+ 
 }
 /* Image Popup Styles */
 .image-popup-overlay {
@@ -226,6 +227,7 @@
   background: white;
   border-radius: 16px;
   padding: 2rem;
+  width: 95vw;
   max-width: 90vw;
   max-height: 90vh;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -309,8 +311,10 @@
 /* Make sure the popup works on mobile */
 @media (max-width: 768px) {
   .image-popup-content {
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 1rem;
+    width: 95vw;
+    max-width: 95vw;
   }
   
   .popup-close-btn {
@@ -323,7 +327,9 @@
     font-size: 1rem;
   }
   .popup-image {
-  max-width: 700px;
+  max-width: 85vw;
+  width: 100%;
+  
   max-height: 80vh;
   border-radius: 12px;
   object-fit: contain;
