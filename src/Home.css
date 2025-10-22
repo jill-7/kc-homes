@@ -261,6 +261,7 @@
   
   .main-heading {
     font-size: 2.5rem;
+    
   }
   
   .next-heading {
@@ -282,6 +283,13 @@
   .reviews-section {
     padding: 3rem 1.5rem;
   }
+  .kc-review {
+    margin-left: 20px;
+    margin-top: -12px;
+
+  }
+   
+
 }
 
 /* Mobile Styles (up to 768px) */
@@ -352,15 +360,21 @@
   }
   
   .kc-review {
-    margin-left: 20px;
-    margin-top: -20px;
+     margin-left: 20px;
+    margin-top: -12px;
+    
   }
   
   .google-icon {
     width: 18px;
     height: 18px;
   }
+
+  
+  
 }
+
+
 /* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
   .slideshow-container {
@@ -420,8 +434,8 @@
   }
   
   .kc-review {
-    margin-left: 15px;
-    margin-top: -15px;
+    margin-left: 20px;
+    margin-top: -12px;
   }
 }
 

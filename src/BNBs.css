@@ -435,6 +435,13 @@
   .popup-caption {
     font-size: 1rem;
   }
+  .popup-image {
+  max-width: 500px;
+  max-height: 75vh;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 }
 
 @media (max-width: 480px) {
@@ -445,4 +452,11 @@
   .bnb-image-container {
     height: 200px;
   }
+  .popup-image {
+  max-width: 500px;
+  max-height: 75vh;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 }
