@@ -294,17 +294,31 @@
 
 /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
-  .slideshow-container {
-    height: 60vh;
-    margin-top: 70px;
+   .slideshow-container {
+    height: 65vh; /* a bit taller for mobile visuals */
   }
-.content-container {
-    margin-top: -240px;
-    padding-top: 1rem;
-    max-width: 95%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
+  .slideshow-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
+  .content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    z-index: 2;
+
+  }
+
+
+  
+
   
   .main-heading {
     font-size: 2rem;
@@ -437,6 +451,30 @@
     margin-left: 20px;
     margin-top: -12px;
   }
+   .review-footer a.kc-reviews {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .review-footer .google-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    position: relative;
+    top: 0.5px; /* slightly nudges icon down for perfect balance */
+  }
+
+  .review-footer .kc-review {
+    font-size: 15px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    top: 0.5px; /* optional – keeps text and icon visually level */
+
+  }
+   
 }
 
 /* Extra small devices (up to 320px) */
