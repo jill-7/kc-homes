@@ -292,10 +292,12 @@
 
 }
 
-/* Mobile Styles (up to 768px) */
+
+   /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
-   .slideshow-container {
-    height: 65vh; /* a bit taller for mobile visuals */
+  .slideshow-container {
+    height: 65vh;
+    margin-top: 70px;
   }
 
   .slideshow-image {
@@ -304,43 +306,43 @@
     object-fit: cover;
     object-position: center;
   }
+  
   .content-container {
     position: absolute;
-    top: 50%;
+    top: 45%; /* Adjusted from 50% to position it higher */
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0 1rem;
     text-align: center;
-    z-index: 2;
-
+    z-index: 2;
+    width: 90%;
   }
 
-
-  
-
-  
   .main-heading {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
   
   .next-heading {
     font-size: 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
   
   .subtext {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    line-height: 1.4;
   }
- .cta-button {
+  
+  .cta-button {
     padding: 0.625rem 1.5rem;
     font-size: 1rem;
   }
   
   .reviews-section {
     padding: 2rem 1rem;
+    margin-top: 100vh; /* Push reviews below the hero section */
   }
   
   .section-title {
@@ -359,7 +361,8 @@
     max-width: 350px;
     padding: 1.25rem;
   }
-.review-header {
+  
+  .review-header {
     gap: 0.75rem;
   }
   
@@ -374,19 +377,16 @@
   }
   
   .kc-review {
-     margin-left: 20px;
+    margin-left: 20px;
     margin-top: -12px;
-    
   }
   
   .google-icon {
     width: 18px;
     height: 18px;
   }
-
-  
-  
 }
+  
 
 
 /* Small Mobile (up to 480px) */
