@@ -154,7 +154,7 @@ export default function Registration() {
             required
             />
             <label htmlFor='terms'>
-              I agree to the <a href='/terms and conditions.pdf' target='_blank' rel='noopener noreferrer'>Terms & Conditions</a>
+              I agree to the <a href='/KC HOMES T&Cs.pdf' target='_blank' rel='noopener noreferrer'>Terms & Conditions</a>
 
             </label>
 
