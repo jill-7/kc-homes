@@ -304,13 +304,13 @@
 @media (max-width: 768px) {
   .slideshow-container {
     height: 70vh;
-    margin-top: 70px;
+    margin-top: 80px;
   }
   
   .content-container {
-    margin-top: -265px;
+    margin-top: -280px;
     padding-top: 1rem;
-    max-width: 95%;
+    max-width: 90%;
     padding-left: 1rem;
     padding-right: 1rem;
   }

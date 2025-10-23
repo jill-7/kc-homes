@@ -47,18 +47,18 @@ export default function Registration() {
         whatsappLink: selectedTrip?.whatsappLink ? `https://chat.whatsapp.com/${selectedTrip.whatsappLink}`: 'Not available',
       };
 
-      await send('service_juazvd7,template_evww4ar',adminParams)
-
-
-      if (selectedTrip) {
+      await send('service_juazvd7','template_5p8pgm4',adminParams);
+      
+    if (selectedTrip) {
       const userParams = {
         ...adminParams,
         whatsapp_to_join: selectedTrip?.whatsappLink || "F8d3eQoHBOzHXZfVXOErPY"
       };
-      await send('service_juazvd7', 'template_5p8pgm4', userParams);
+
+      
+      await send('service_juazvd7', 'template_evww4ar', userParams);
     }
 
-      await send('service_juazvd7', 'template_evww4ar', adminParams);
       
        
 
