@@ -319,6 +319,7 @@
     max-width: 90%;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 65px;
   }
 
   .main-heading {
@@ -410,13 +411,20 @@
 /* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
   .slideshow-container {
-    height: 50vh;
-    margin-top: 60px;
+    height: 70vh;
+    margin-top: 80px;
+  }
+  .slideshow-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   
   .content-container {
-    margin-top: -200px;
+    margin-top: -320px;
     padding-top: 0.75rem;
+    margin-bottom: 40px;
   }
   
   .main-heading {
