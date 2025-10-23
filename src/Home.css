@@ -303,12 +303,12 @@
    /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 65vh;
+    height: 70vh;
     margin-top: 70px;
   }
   
   .content-container {
-    margin-top: -200px;
+    margin-top: -265px;
     padding-top: 1rem;
     max-width: 95%;
     padding-left: 1rem;
@@ -374,7 +374,7 @@
   
   .kc-review {
     margin-left: 20px;
-    margin-top: -12px;
+    margin-top: -24px;
   }
   
   .google-icon {

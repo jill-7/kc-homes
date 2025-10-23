@@ -141,6 +141,19 @@ export default function Registration() {
             />
           </div>
 
+          <div className='terms-section'>
+            <input 
+            type='checkbox'
+            id='terms'
+            required
+            />
+            <label htmlFor='terms'>
+              I agree to the <a href='/terms and conditions.pdf' target='_blank' rel='noopener noreferrer'>Terms & Conditions</a>
+
+            </label>
+
+          </div>
+
           <button type="submit" className="submit-btn">
             {selectedTrip ? 'Complete Registration' : 'Send Message'}
           </button>
