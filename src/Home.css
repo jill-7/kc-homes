@@ -303,12 +303,12 @@
    /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 60vh;
+    height: 65vh;
     margin-top: 70px;
   }
   
   .content-container {
-    margin-top: -240px;
+    margin-top: -200px;
     padding-top: 1rem;
     max-width: 95%;
     padding-left: 1rem;
