@@ -308,7 +308,7 @@
   }
   
   .content-container {
-    margin-top: -240px;
+    margin-top: -180px;
     padding-top: 1rem;
     max-width: 95%;
     padding-left: 1rem;
@@ -338,7 +338,7 @@
   
   .reviews-section {
     padding: 2rem 1rem;
-    margin-top: 100vh; /* Push reviews below the hero section */
+    
   }
   
   .section-title {
