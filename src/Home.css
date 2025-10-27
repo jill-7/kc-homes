@@ -303,13 +303,13 @@
    /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 70vh;
+    height: 60vh;
     margin-top: 80px;
   }
   .slideshow-image {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
   
