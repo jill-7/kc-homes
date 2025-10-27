@@ -304,8 +304,8 @@
 @media (max-width: 768px) {
   .slideshow-container {
     height: 65vh;
-    margin-top: 80px;
-    margin-bottom: 15px;
+    margin-top: 76px;
+    margin-bottom: 25px;
   }
   .slideshow-image {
     height: 100%;
@@ -413,8 +413,8 @@
 @media (max-width: 480px) {
   .slideshow-container {
     height: 65vh;
-    margin-top: 80px;
-    margin-bottom: 15px;
+    margin-top: 76px;
+    margin-bottom: 25px;
   }
   .slideshow-image {
     height: 100%;
