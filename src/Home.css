@@ -411,13 +411,13 @@
 /* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
   .slideshow-container {
-    height: 70vh;
+    height: 60vh;
     margin-top: 80px;
   }
   .slideshow-image {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
   
