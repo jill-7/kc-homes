@@ -303,8 +303,8 @@
    /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 65vh;
-    margin-top: 76px;
+    height: 70vh;
+    margin-top: 80px;
     margin-bottom: 25px;
   }
   .slideshow-image {
@@ -412,8 +412,8 @@
 /* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
   .slideshow-container {
-    height: 65vh;
-    margin-top: 76px;
+    height: 70vh;
+    margin-top: 80px;
     margin-bottom: 25px;
   }
   .slideshow-image {
