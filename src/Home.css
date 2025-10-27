@@ -303,13 +303,14 @@
    /* Mobile Styles (up to 768px) */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 60vh;
+    height: 65vh;
     margin-top: 80px;
+    margin-bottom: 15px;
   }
   .slideshow-image {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   }
   
@@ -411,13 +412,14 @@
 /* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
   .slideshow-container {
-    height: 60vh;
+    height: 65vh;
     margin-top: 80px;
+    margin-bottom: 15px;
   }
   .slideshow-image {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
   }
   
