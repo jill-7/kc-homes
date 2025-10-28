@@ -9,8 +9,8 @@ const BNBs = () => {
   const [currentPhotoIndices, setCurrentPhotoIndices] = useState({});
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Fetch BNBs from Airtable
- // Fetch BNBs from Airtable
+  
+ // BNBs from Airtable
 useEffect(() => {
   const fetchBnbs = async () => {
     try {
@@ -55,7 +55,7 @@ useEffect(() => {
     return matchesSearch && matchesPrice;
   });
 
-  // Handle image navigation for each BNB
+  // image navigation for each BNB
   const handleNextPhoto = (bnbIndex, e) => {
     e.stopPropagation();
     const bnb = filteredBnbs[bnbIndex];

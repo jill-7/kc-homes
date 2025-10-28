@@ -1,4 +1,4 @@
-/* Footer Base Styles */
+
 .footer {
   background:  #2d3748;
   color: white;
@@ -73,7 +73,7 @@
   color: #f6ad55;
 }
 
-/* Logo + Contact */
+/* Logo and Contact */
 .footer-logo {
   display: flex;
   align-items: center;
@@ -115,7 +115,7 @@
   font-size: 0.9rem;
 }
 
-/* Responsive Adjustments */
+/* media query */
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

@@ -33,7 +33,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Column 3: Contact + Logo */}
+        {/* Column 3: Contact and Logo */}
         <div className="footer-column">
           <div className="footer-logo">
             <img src="/KC-logo.png" alt="KC Tours Logo" className="logo-img" />

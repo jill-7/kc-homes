@@ -55,7 +55,7 @@ export default function VisitedTrips() {
       <div className="photo-diary-grid">
         {visitedTrips.map((trip) => (
           <div key={trip.id} className="photo-diary-card">
-            {/* Large Photo Section - Takes 60% of card */}
+            {/* Large Photo Section  */}
             <div className="photo-hero">
               <img src={trip.image} alt={trip.name} />
               <div className="photo-overlay">
@@ -65,7 +65,7 @@ export default function VisitedTrips() {
               </div>
             </div>
             
-            {/* Content Section - Takes 40% of card */}
+            {/* Content Section  */}
             <div className="diary-content">
               <div className="trip-header">
                 <h3 className="trip-title">{trip.name}</h3>

@@ -70,7 +70,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Showcase */}
+    
       {/* Team Showcase - Simplified */}
 <section className="team-section">
   <h2 className="trio">About Us</h2>

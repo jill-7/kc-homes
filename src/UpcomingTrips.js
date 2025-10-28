@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './UpcomingTrips.css';
-import { upcomingTrips } from './tripData'; // Import from shared file
+import { upcomingTrips } from './tripData'; 
 
 export default function UpcomingTrips() {
   const [selectedImage, setSelectedImage] = useState(null);

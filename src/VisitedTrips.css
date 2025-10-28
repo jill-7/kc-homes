@@ -40,7 +40,7 @@
   border: 1px solid #e2e8f0;
   display: flex;
   flex-direction: column;
-  height: 800px; /* Fixed height for consistency */
+  height: 800px; 
 }
 
 .photo-diary-card:hover {
@@ -48,10 +48,10 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* Photo Hero Section - Takes 60% height */
+/* Photo Hero Section */
 .photo-hero {
   position: relative;
-  height: 60%; /* 60% of card height */
+  height: 60%; 
   overflow: hidden;
 }
 
@@ -88,14 +88,14 @@
   backdrop-filter: blur(10px);
 }
 
-/* Diary Content Section - Takes 40% height */
+/* Diary Content Section  */
 .diary-content {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  height: 40%; /* 40% of card height */
-  overflow-y: auto; /* Scroll if content overflows */
+  height: 40%;
+  overflow-y: auto; 
 }
 
 .trip-header {
@@ -186,7 +186,7 @@
   }
   
   .photo-diary-card {
-    height: 620px; /* Slightly shorter on mobile */
+    height: 620px; 
   }
   
   .trip-header {

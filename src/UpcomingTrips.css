@@ -299,7 +299,7 @@
   }
 }
 
-/* Add a little hover effect to the trip images */
+
 .trip-image img {
   transition: transform 0.3s ease;
 }
@@ -308,7 +308,7 @@
   transform: scale(1.02);
 }
 
-/* Make sure the popup works on mobile */
+
 @media (max-width: 768px) {
   .image-popup-content {
     padding: 1rem;

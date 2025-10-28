@@ -1,4 +1,3 @@
-// src/tripData.js
 export const upcomingTrips = [
   {
     id: 'diani-2024',
